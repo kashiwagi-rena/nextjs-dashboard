@@ -20,7 +20,6 @@ export default function Home() {
   const deleteTodo = (index: number) => {
     const newTodos = [...todos]
     newTodos.splice(index, 1)
-    console.log("@@@ index @@@", index);
     setTodos(newTodos)
   }
 

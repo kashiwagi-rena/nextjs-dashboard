@@ -5,6 +5,8 @@ export default function InvoiceStatus({ status }: { status: string }) {
   return (
     <span
       className={clsx(
+        // clsxに関してのドキュメント　https://www.npmjs.com/package/clsx
+        // https://github.com/lukeed/clsx
         'inline-flex items-center rounded-full px-2 py-1 text-xs',
         {
           'bg-gray-100 text-gray-500': status === 'pending',
